@@ -3,197 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY AMAZON</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Amazon Clone | HTML &amp; CSS Demo</title>
+    <meta name="description" content="A responsive Amazon homepage clone built with HTML and CSS as a front-end learning project. Not affiliated with Amazon.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="top">
     <header>
-    <div class="navbar">
-            <div class="nav-logo border">
-                <div class="logo"></div>
-            </div>
+        <div class="navbar">
+            <a href="#top" class="nav-logo nav-item" aria-label="Back to top of page">
+                <span class="logo"></span>
+            </a>
 
-            <div class="nav-address border">
-                <p class="add-first">Deliver to</p>
-                <div class="add-icon">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p class="add-second">India</p>
-                </div>
-            </div>
+            <a href="#" class="nav-address nav-item">
+                <span class="nav-label">Deliver to</span>
+                <span class="nav-strong"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> India</span>
+            </a>
 
-            <div class="nav-search">
-                <select class="search-select">
+            <div class="nav-search" role="search">
+                <select class="search-select" aria-label="Search category">
                     <option>All</option>
+                    <option>Clothes</option>
+                    <option>Electronics</option>
+                    <option>Furniture</option>
+                    <option>Toys</option>
                 </select>
-                <input placeholder="Search Amazon" class="search-input">
-                <div class="search-icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+                <input type="search" class="search-input" placeholder="Search products" aria-label="Search products">
+                <button type="button" class="search-button" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                </button>
             </div>
-            
-        <div class="nav-signin border">
-            <p><span>Hello, sign in</span></p>
-            <p class="nav-second">Account & Lists</p>
+
+            <a href="#" class="nav-signin nav-item">
+                <span class="nav-label">Hello, sign in</span>
+                <span class="nav-strong">Account &amp; Lists</span>
+            </a>
+
+            <a href="#" class="nav-return nav-item">
+                <span class="nav-label">Returns</span>
+                <span class="nav-strong">&amp; Orders</span>
+            </a>
+
+            <a href="#" class="nav-cart nav-item">
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                <span class="nav-strong">Cart</span>
+            </a>
         </div>
 
-        <div class="nav-return border">
-            <p><span>Returns</span></p>
-            <p class="nav-second">& Orders</p>
-        </div>
-
-        <div class="nav-cart border">
-            <i class="fa-solid fa-cart-shopping"></i>
-            cart
-        </div>
-    </div>
-
-    <div class="panel">
-        <div class="panel-all">
-            <i class="fa-solid fa-bars"></i>
-            All
-        </div>
-        <div class="panel-ops">
-            <p>Today's Deals</p>
-            <p>Customer Services</p>
-            <p>Registry</p>
-            <p>Gift Cards</p>
-            <p>Sell</p>
-        </div>
-        <div class="panel-deals">
-            Shop deals in Electronics
-        </div>
-    </div>
-
+        <nav class="panel" aria-label="Departments">
+            <a href="#" class="panel-all"><i class="fa-solid fa-bars" aria-hidden="true"></i> All</a>
+            <div class="panel-ops">
+                <a href="#">Today's Deals</a>
+                <a href="#">Customer Service</a>
+                <a href="#">Registry</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Sell</a>
+            </div>
+            <a href="#" class="panel-deals">Shop deals in Electronics</a>
+        </nav>
     </header>
 
-    <div class="hero-section">
-        <div class="hero-msg">
-            <P>You are on amazon.com.You can also shop on Amazon India for millions of products with fast local delivery.<a> Click here to go to amazon.in</a></P>
-        </div>
-    </div>
+    <main>
+        <section class="hero-section" aria-label="Featured promotion">
+            <p class="hero-msg">
+                This is a front-end demo project, not the real Amazon. Nothing here can be purchased.
+                <a href="https://www.amazon.in/" target="_blank" rel="noopener noreferrer">Shop on amazon.in</a>
+            </p>
+        </section>
 
-    <div class="shop-section">
-        <div class="box1 box">
-           <div class="box-content">
-            <h2>Clothes</h2>
-            <div class="box-img" style="background-image: url('box1_image.jpg');"></div>
-            <p>See more</p>
-           </div>
-        </div>
-        <div class="box2 box">
-            <div class="box-content">
-                <h2>Health & Personal Care</h2>
-                <div class="box-img" style="background-image: url('box2_image.jpg');"></div>
-                <p>See more</p>
-               </div>
-        </div>
-        <div class="box3 box">
-            <div class="box-content">
-            <h2>Furniture</h2>
-            <div class="box-img" style="background-image: url('box3_image.jpg');"></div>
-            <p>See more</p>
-           </div>
-        </div>
-        <div class="box4 box">
-            <div class="box-content">
-            <h2>Electronics</h2>
-            <div class="box-img" style="background-image: url('box4_image.jpg');"></div>
-            <p>See more</p>
-           </div>
-        </div>
-        <div class="box5 box">
-            <div class="box-content">
-             <h2>Beauty Picks</h2>
-             <div class="box-img" style="background-image: url('box5_image.jpg');"></div>
-             <p>See more</p>
-            </div>
-         </div>
-         <div class="box6 box">
-             <div class="box-content">
-                 <h2>Pet Care</h2>
-                 <div class="box-img" style="background-image: url('box6_image.jpg');"></div>
-                 <p>See more</p>
-                </div>
-         </div>
-         <div class="box7 box">
-             <div class="box-content">
-             <h2>New Arrival in Toys</h2>
-             <div class="box-img" style="background-image: url('box7_image.jpg');"></div>
-             <p>See more</p>
-            </div>
-         </div>
-         <div class="box8 box">
-             <div class="box-content">
-             <h2>Discover Fashion Trends</h2>
-             <div class="box-img" style="background-image: url('box8_image.jpg');"></div>
-             <p>See more</p>
-            </div>
-         </div>
-    </div>
+        <section class="shop-section" aria-label="Shop by category">
+            <article class="box">
+                <h2>Clothes</h2>
+                <img class="box-img" src="assets/images/clothes.jpg" alt="Folded trousers on a wooden hanger" width="372" height="232" loading="lazy">
+                <a href="#">See more</a>
+            </article>
+            <article class="box">
+                <h2>Health &amp; Personal Care</h2>
+                <img class="box-img" src="assets/images/health-personal-care.jpg" alt="Toothbrush, razor, floss and toiletries on a white table" width="758" height="608" loading="lazy">
+                <a href="#">See more</a>
+            </article>
+            <article class="box">
+                <h2>Furniture</h2>
+                <img class="box-img" src="assets/images/furniture.jpg" alt="White desk with an upholstered chair" width="372" height="232" loading="lazy">
+                <a href="#">See more</a>
+            </article>
+            <article class="box">
+                <h2>Electronics</h2>
+                <img class="box-img box-img-contain" src="assets/images/electronics.jpg" alt="Black smartphone with a stylus" width="392" height="400" loading="lazy">
+                <a href="#">See more</a>
+            </article>
+            <article class="box">
+                <h2>Beauty Picks</h2>
+                <img class="box-img" src="assets/images/beauty.jpg" alt="Makeup brushes, lipstick and nail polish spilling from a pouch" width="758" height="608" loading="lazy">
+                <a href="#">See more</a>
+            </article>
+            <article class="box">
+                <h2>Pet Care</h2>
+                <img class="box-img" src="assets/images/pet-care.jpg" alt="Golden retriever lying beside a grey and white cat" width="758" height="608" loading="lazy">
+                <a href="#">See more</a>
+            </article>
+            <article class="box">
+                <h2>New Arrivals in Toys</h2>
+                <img class="box-img" src="assets/images/toys.jpg" alt="Toy plane, red toy car and coloured pencils on a yellow background" width="758" height="608" loading="lazy">
+                <a href="#">See more</a>
+            </article>
+            <article class="box">
+                <h2>Discover Fashion Trends</h2>
+                <img class="box-img" src="assets/images/fashion.jpg" alt="Summer outfits with a sun hat, earrings and heeled sandals" width="758" height="608" loading="lazy">
+                <a href="#">See more</a>
+            </article>
+        </section>
+    </main>
 
     <footer>
-        <div class="foot-panel1">
-            Back to Top
-        </div>
+        <a href="#top" class="foot-panel1">Back to Top</a>
 
         <div class="foot-panel2">
-            <ul>
-                <p>Get to Know Us</p>
-                <a>Careers</a>
-                <a>Blog</a>
-                <a>About Amazon</a>
-                <a>Investor Relations</a>
-                <a>Amazon Devices</a>
-                <a>Amazon Sciences</a>
-            </ul>
-            <ul>
-                <p>Get to Know Us</p>
-                <a>Careers</a>
-                <a>Blog</a>
-                <a>About Amazon</a>
-                <a>Investor Relations</a>
-                <a>Amazon Devices</a>
-                <a>Amazon Sciences</a>
-            </ul>
-            <ul>
-                <p>Get to Know Us</p>
-                <a>Careers</a>
-                <a>Blog</a>
-                <a>About Amazon</a>
-                <a>Investor Relations</a>
-                <a>Amazon Devices</a>
-                <a>Amazon Sciences</a>
-            </ul>
-            <ul>
-                <p>Get to Know Us</p>
-                <a>Careers</a>
-                <a>Blog</a>
-                <a>About Amazon</a>
-                <a>Investor Relations</a>
-                <a>Amazon Devices</a>
-                <a>Amazon Sciences</a>
-            </ul>
+            <div class="foot-col">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Devices</a></li>
+                    <li><a href="#">Science</a></li>
+                </ul>
+            </div>
+            <div class="foot-col">
+                <h3>Make Money with Us</h3>
+                <ul>
+                    <li><a href="#">Sell Products</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                    <li><a href="#">Advertise Your Products</a></li>
+                    <li><a href="#">Self-Publish</a></li>
+                </ul>
+            </div>
+            <div class="foot-col">
+                <h3>Payment Products</h3>
+                <ul>
+                    <li><a href="#">Business Card</a></li>
+                    <li><a href="#">Shop with Points</a></li>
+                    <li><a href="#">Reload Your Balance</a></li>
+                    <li><a href="#">Currency Converter</a></li>
+                </ul>
+            </div>
+            <div class="foot-col">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Your Orders</a></li>
+                    <li><a href="#">Shipping Rates &amp; Policies</a></li>
+                    <li><a href="#">Returns &amp; Replacements</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
         </div>
 
         <div class="foot-panel3">
-            <div class="logo">
-
-            </div>
+            <span class="logo"></span>
         </div>
 
         <div class="foot-panel4">
-            <div class="pages">
-                <a>Conditions of Use</a>
-                <a>Privacy Notice</a>
-                <a>Your Ads Privacy Choices</a>
-            </div>
-            <div class="copyright">
-                © 1996-2024, Amazon.com, Inc. or its affiliates
-            </div>
+            <p>Educational project for learning HTML and CSS. Not affiliated with or endorsed by Amazon.com, Inc.</p>
+            <p>Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.</p>
         </div>
     </footer>
 </body>
 </html>
-
- <!-- 01:24:04 of building Amazon Clone -->
